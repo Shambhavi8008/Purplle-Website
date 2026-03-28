@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>purplle website</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <div class="corner-section">
+      <p><i class="fa-solid fa-mobile"></i> DOWNLOAD APP</p>
+      <span></span>
+      <p><i class="fa-solid fa-circle-info"></i> SUPPORT</p>
+      <span></span>
+      <p><i class="fa-solid fa-truck"></i> TRACK ORDER</p>
+    </div>
+
+    <hr class="line" style="margin-top: 4%;">
+
+
+    <div class="navbar">
+      <div class="nav-search">
+        <input class="search-input" placeholder="What are you looking for?">
+        <div class="search-icon"></div>
+        <i class="fa-solid fa-magnifying-glass" style="color: #424242;"></i>
+      </div>
+      <div class="logo">
+        <img src="https://offerseveryday.in/uploads/business/Purplle_Logo_page-0001.jpg" class="logo1"></img>
+        <img src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1728644752_join-elite-150.gif?tr=f-gif"
+          class="logo2"></img>
+      </div>
+
+      <div class="nav-icons">
+        <i class="fa-regular fa-heart" style="font-weight: bold;"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <hr class="line">
+    <div class="panel">
+      <div class="panel-options">
+        <p>SHOP CATEGORIES</p>
+        <p>BRANDS</p>
+        <p>OFFERS</p>
+        <p>NEW</p>
+        <p>SPLURGE</p>
+        <p>MAGAZINE</p>
+        <P>ELITE OFFERS</P>
+      </div>
+    </div>
+    <hr class="line">
+
+  </header>
+
+  <div class="first-slideshow">
+    <img
+      src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1773992338_maybelline-mascara-makeup-copy-1_2596x836.jpeg">
+    <img 
+      src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1774432932_web-1.jpg">
+    <img
+      src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1773992335_lakme-lipstick_2596x836.jpeg">
+    <img
+      src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1773992330_dlf-foundation-long-wear_2596x836.jpeg">
+    <img
+      src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1773903565_mamaearth-ubtan-facewash_2596x836.jpeg">
+    <img
+      src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1774069901_cetaphil-new-look_2596x836.jpeg">
+    <img
+      src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1696928133_maybelline_fit_me_suhana-2596x836.jpeg">
+    <button class="prev" onclick="prevSlide()">&#8249;</button>
+    <button class="next" onclick="nextSlide()">&#8250;</button>
+  </div>
+
+
+
+  <p class="featured"> HANDPICKED FOR YOU </p>
+  <p class="view-all"> View ALL
+    <i class="fa-solid fa-arrow-right"></i>
+  </p>
+
+
+  <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1774689877_pilgrim-plum-copy-1_2560x544.jpeg" class="photo">
+
+
+
+  <div class="section">
+    <h2 style="font-size: 1.4rem; color: #424242;">BEST SELLERS</h2>
+    <div class="slider-container">
+      <div class="arrow left" onclick="slideLeft()">&#10094;</div>
+      <div class="slider" id="slider">
+
+        <!-- 10 PRODUCT CARDS -->
+        <div class="card">
+          <img
+            src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/393781/good-vibes-cica-brightening-glow-sunscreen-50-gm_9_display_1761748038_96a3461d.jpg">
+          <h4>CICA Brightening Glow Sunscreen SPF 50 PA++++|Cica Extract, 3% Niacinamide, & Hyaluronic Acid|Brightening
+            Sunscreen|Lightweight Aqua Gel|Non-Greasy</h4>
+          <div class="price-details">
+            <div class="price">₹181</div>
+            <div class="old-price">₹240</div>
+            <div class="discount">25% off</div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card"><img
+            src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/396714/plum-3-percentage-niacinamide-toner-with-rice-water-150-ml-91_1_display_1773729721_457c85b0.jpg">
+          <h4>Plum 3% Niacinamide & Rice Water Alcohol-Free Toner - Tightens Pores, Brightens & Fades Blemishes 150 ml
+          </h4>
+          <div class="price-details">
+            <div class="price">₹369</div>
+            <div class="old-price">₹440</div>
+            <div class="discount">10% off</div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card"><img
+            src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/404313/good-vibes-vitamin-c-daily-brightening-glow-sunscreen-50-gm_2_display_1763379723_b0262796.jpg">
+          <h4>Good Vibes Vitamin C SPF 50 PA++++ Sunscreen | Brightening & Hydrating | 3% Niacinamide + Hyaluronic Acid
+            | No White Cast, Lightweight & Non-Sticky | Daily Glow Sun Protection For All Skin Types – 50 gm</h4>
+          <div class="price-details">
+            <div class="price">₹192</div>
+            <div class="old-price">₹240</div>
+            <div class="discount">20% off</div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card"><img
+            src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/404371/ny-bae-chocoberry-lip-balm-4-5-gm_1_display_1763010234_b17d7344.jpg">
+          <h4>NY Bae Choco Berry Tinted Lip Balm with SPF 22 Choco Brown Tint | Deeply Nourishing Lip Color with Almond
+            Oil, Shea Butter & Vitamin E | Soft, Smooth & Sun-Protected Lips 4.5 gm</h4>
+          <div class="price-details">
+            <div class="price">₹99</div>
+            <div class="old-price">₹125</div>
+            <div class="discount">21% off</div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card"><img
+            src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/404113/ny-bae-makeup-kit-80-gm_1_display_1767171993_9f9e56c0.jpg">
+          <h4>NY Bae All I Need Makeup Kit- 80 gm | Primer | BB Cream | Compact | Pink Blush | Kajal | Mascara | Brown
+            Lipstick | Setting Spray | All-in-One 8-Step Makeup Kit | Travel-Friendly | Long-Lasting | Makeup Set with
+            Bestsellers | Gift Box | Makeup Combo</h4>
+          <div class="price-details">
+            <div class="price">₹649</div>
+            <div class="old-price">₹999</div>
+            <div class="discount">35% off</div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card"><img
+            src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/410177/dermdoc-by-purplle-2-percentage-kojic-acid-night-cream-with-niacinamide-and-alpha-arbutin-for-skin-brightening-50g-4-percentage-niacinamide-face-cream-for-clear-and-bright-skin-50g_1_display_1722929119_71e1ab86.jpg">
+          <h4>DERMDOC AM-PM Daily Care Duo | 4% Niacinamide Face Cream for Clear & Bright Skin (50 gm)| 2% Kojic Acid
+            Night Cream
+            with Niacinamide & Alpha Arbutin for Skin Brightening (50 gm) | Combo of 2</h4>
+          <div class="price-details">
+            <div class="price">₹593</div>
+            <div class="old-price">₹715</div>
+            <div class="discount">17% off</div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card"><img
+            src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/396282/faces-canada-always-on-glow-combo-all-day-hydra-matte-foundation-absolute-ivory-012-18-ml-strobe-cream-rose-gold-18-ml-ultime-pro-makeup-fixer-50-ml-illuminating-and-glowing-makeup-base-long-lasting-makeup-setting-spray_2_display_1742813333_f0496e72.jpg">
+          <h4>Faces Canada Celeb Glow Combo | Strobe Cream - Rose Gold, 18 ml + Hydra Matte Foundation - Rose Ivory, 18
+            ml + Comfy Matte Wow - Cocoa Crush, 3.8 ml | SPF 30 | Highlighter | Highly Pigmented | Buildable Coverage |
+            Pack of 3</h4>
+          <div class="price-details">
+            <div class="price">₹803</div>
+            <div class="old-price">₹923</div>
+            <div class="discount">13% off</div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card"><img
+            src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/408906/pond-s-super-light-gel-hydrated-glow-100ml-98g-2-40-93_1_display_1756962959_a4bca607.jpg">
+          <h4>Ponds Super Light Gel | Oil-Free Moisturizer with Hyaluronic Acid & Vitamin E | Hydrates Skin |Non Sticky|
+            100 ml</h4>
+          <div class="price-details">
+            <div class="price">₹200</div>
+            <div class="old-price">₹300</div>
+            <div class="discount">30% off</div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card"><img
+            src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/403719/alps-goodness-rosemary-water-100-ml-rosemary-water-for-hair-hair-spray-for-hair-growth-1_1_display_1773724780_0d2f50c9.jpg">
+          <h4>Alps Goodness Rosemary Water (100 ml) | Rosemary water for hair | Hair Spray for Hair Growth</h4>
+          <div class="price-details">
+            <div class="price">₹200</div>
+            <div class="old-price">₹300</div>
+            <div class="discount">30% off</div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card"><img
+            src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/395736/simple-kind-to-skin-refreshing-facial-wash-100-ml-21-16-19_1_display_1769085287_7602cbb4.jpg">
+          <h4>Simple Kind To Skin Refreshing Face Wash (100 ml) | For All Skin Types | No Soap, No Added Perfume, No
+            Harsh Chemicals, No Artificial Color, No Alcohol and No Parabens</h4>
+          <div class="price-details">
+            <div class="price">₹204</div>
+            <div class="old-price">₹275</div>
+            <div class="discount">25% off</div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card"><img
+            src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/404313/good-vibes-vitamin-c-daily-brightening-glow-sunscreen-50-gm_2_display_1763379723_b0262796.jpg">
+          <h4>Good Vibes Vitamin C SPF 50 PA++++ Sunscreen | Brightening & Hydrating | 3% Niacinamide + Hyaluronic Acid
+            | No White Cast, Lightweight & Non-Sticky | Daily Glow Sun Protection For All Skin Types – 50 gm</h4>
+          <div class="price-details">
+            <div class="price">₹192</div>
+            <div class="old-price">₹240</div>
+            <div class="discount">20% off</div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card"><img
+            src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/404371/ny-bae-chocoberry-lip-balm-4-5-gm_1_display_1763010234_b17d7344.jpg">
+          <h4>NY Bae Choco Berry Tinted Lip Balm with SPF 22 Choco Brown Tint | Deeply Nourishing Lip Color with Almond
+            Oil, Shea Butter & Vitamin E | Soft, Smooth & Sun-Protected Lips 4.5 gm</h4>
+          <div class="price-details">
+            <div class="price">₹99</div>
+            <div class="old-price">₹125</div>
+            <div class="discount">21% off</div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card"><img
+            src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/404113/ny-bae-makeup-kit-80-gm_1_display_1767171993_9f9e56c0.jpg">
+          <h4>NY Bae All I Need Makeup Kit- 80 gm | Primer | BB Cream | Compact | Pink Blush | Kajal | Mascara | Brown
+            Lipstick | Setting Spray | All-in-One 8-Step Makeup Kit | Travel-Friendly | Long-Lasting | Makeup Set with
+            Bestsellers | Gift Box | Makeup Combo</h4>
+          <div class="price-details">
+            <div class="price">₹649</div>
+            <div class="old-price">₹999</div>
+            <div class="discount">35% off</div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card"><img
+            src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/410177/dermdoc-by-purplle-2-percentage-kojic-acid-night-cream-with-niacinamide-and-alpha-arbutin-for-skin-brightening-50g-4-percentage-niacinamide-face-cream-for-clear-and-bright-skin-50g_1_display_1722929119_71e1ab86.jpg">
+          <h4>DERMDOC AM-PM Daily Care Duo | 4% Niacinamide Face Cream for Clear & Bright Skin (50 gm)| 2% Kojic Acid
+            Night Cream with Niacinamide & Alpha Arbutin for Skin Brightening (50 gm) | Combo of 2</h4>
+          <div class="price-details">
+            <div class="price">₹593</div>
+            <div class="old-price">₹715</div>
+            <div class="discount">17% off</div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card"><img
+            src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/396282/faces-canada-always-on-glow-combo-all-day-hydra-matte-foundation-absolute-ivory-012-18-ml-strobe-cream-rose-gold-18-ml-ultime-pro-makeup-fixer-50-ml-illuminating-and-glowing-makeup-base-long-lasting-makeup-setting-spray_2_display_1742813333_f0496e72.jpg">
+          <h4>Faces Canada Celeb Glow Combo | Strobe Cream - Rose Gold, 18 ml + Hydra Matte Foundation - Rose Ivory, 18
+            ml + Comfy Matte Wow - Cocoa Crush, 3.8 ml | SPF 30 | Highlighter | Highly Pigmented | Buildable Coverage |
+            Pack of 3</h4>
+          <div class="price-details">
+            <div class="price">₹803</div>
+            <div class="old-price">₹923</div>
+            <div class="discount">13% off</div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="arrow right" onclick="slideRight()">&#10095;</div>
+    </div>
+  </div>
+
+
+  <div class="block-photos">
+    <div class="container">
+      <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1741236751_mars_1440x700.png">
+      <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1741260608_mamaearth_skin_1440x700.jpeg">
+      <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1741262130_wishcare_1440x700.jpeg">
+      <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1741262126_pilgrim_1440x700.jpeg">
+      <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1741091220_insight_1440x700.jpeg">
+      <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1741091229_sugar_1440x700.jpeg">
+      <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1741091219_global_store_1440x700.jpeg">
+      <img
+        src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1741267316_loreal_professionnel_1440x700.jpeg">
+    </div>
+  </div>
+
+  <div class="last-box-section">
+
+    <div class="last-box">
+      <h5>Makeup</h5>
+      <p>Primer / Lipstick / Foundation / Eyeshadow / Eyeliner / Kajal / Concealer / Nail Polish / Compact / Mascara /
+        Highlighters & illuminators / Makeup Remover / BB & CC Cream / Lip Balm & Treatment / Eyebrow Enhancer / Loose
+        Powder / Blush / Makeup Kits / Setting sprays & fixers / Gel Nail polish</p>
+    </div>
+
+    <div class="last-box">
+      <h5>Skin</h5>
+      <p>Face Pack Masks & Peels / Serum & Facial Oils / Face wash / Facial Kits / Face Cream / Moisturizers / Toner /
+        Essential & Carrier Oils / Sheet Masks / Scrubs & Exfoliators / Lip Balm & Care / Sunscreen / Body Lotions &
+        Moisturizers / Night Cream / Body Wash & Shower Gels / Hand Sanitizer / Face Mist / Lip Scrub / Body Creams &
+        Body Butters / Hand Cream</p>
+    </div>
+
+    <div class="last-box">
+      <h5>Hair</h5>
+      <p>Shampoo / Conditioner / Hair Oil / Hair Serum / Hair Mask / Hair Gel / Hair Spray / Hair Dye / Hair
+        Straightener / Hair Dryer / Hair Clippers / Hair Brushes</p>
+    </div>
+
+    <div class="last-box">
+      <h5>Fragrance</h5>
+      <p>Perfumes / Deodrants & Roll-ons / Solid Perfumes / Aftershaves / Colognes / Gift & Value sets for men / Gift &
+        Value sets for women</p>
+    </div>
+
+    <div class="last-box">
+      <h5>Collections</h5>
+      <p>Castor Oil / Pastel Nail Polish / Lakme 9 to 5 / Black Kajal / Sunscreen</p>
+    </div>
+
+    <div class="last-box">
+      <h5>Brands</h5>
+      <p>Biotique / Wow / Dermdoc / Himalaya / Darling Isabella / Maybelline / Loreal / Good Vibes / NY Bae / Stay
+        Quirky / Aroma Magic / Alps Goodness / Lotus / Purplle / Sugar / Nivea / Lakme</p>
+    </div>
+
+    <div class="last-box">
+      <h5>Men</h5>
+      <p>Perfumes / Deodrants & Roll-ons / Face Wash / Shower Gels / Soap / Body Scrub / Talc / Shaving Cream / Beard
+        Oil / Razors / Aftershave / Beard Wash / Grooming Kits / Shaving Accessories / Hair Styling / Trimmers</p>
+    </div>
+
+    <div class="last-box">
+      <h5>Accessories</h5>
+      <p>Necklaces & Pendants / Earrings / Rings / Bangles & Bracelets / Clips Bands & More</p>
+    </div>
+
+    <div class="last-box">
+      <h5>Electronics</h5>
+      <p>Hair Straightener / Hair Curler / Hair Dryer / Electric Shaver / Trimmers & Clippers / Epilators / Massager</p>
+    </div>
+
+    <div class="last-box">
+      <h5>Wellness</h5>
+      <p>Health & Wellness supplements / Vitamins & supplements / Weight Management products / Family Nutrition / Sports
+        Supplements
+        / Green Tea / Herbal Tea / Healthy Juices & Drinks</p>
+    </div>
+
+    <div class="last-box">
+      <h5>Blogs</h5>
+      <p>Home remedies for dandruff / How to apply eyeliner / Tips for lips care / Home Remedies For Hair Fall / Best
+        Sunscreen
+        Lotions / Home Remedies For Acne And Pimples / Home Remedies For Whiteheads / Home Remedies For Suntan / Serum
+        For Oily,
+        Dry And Sensitive Skin / Choose The Right Serum For Your Skin / Body Lotion For Dry Skin / Home Remedies For
+        Hyperpigmentation</p>
+    </div>
+
+  </div>
+
+
+
+  <footer>
+    <div class="footer">
+      <div class="footer-section">
+        <h4>Purplle</h4>
+        <p>About Us</p>
+        <p>Our Team</p>
+        <p>Careers</p>
+        <p>Press</p>
+        <p>Sitemap</p>
+        <p>Investor Relation</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Privacy Info</h4>
+        <p>Privacy Policy</p>
+        <p>Terms of Use</p>
+        <p>Return & Cancellation Policy</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Need Help?</h4>
+        <p>FAQ's</p>
+        <p>Contact Us</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="copyright-section">
+      <div class="Payments-section">
+        <h4>Payments</h4>
+        <i class="fa-brands fa-amazon-pay" style="color: black;"></i>
+        <i class="fa-brands fa-cc-visa gradient-icon"
+          style=" background: linear-gradient(to right, red, blue); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; "></i>
+        <i class="fa-brands fa-cc-mastercard" style="color: #eb001b;"></i>
+      </div>
+
+      <div class="Connect-section">
+        <h4>Connect</h4>
+        <i class="fa-brands fa-facebook" style="color: blue;"></i>
+        <i class="fa-brands fa-twitter" style="color: rgb(78, 180, 235);"></i>
+        <i class="fa-brands fa-pinterest" style="color: red;"></i>
+        <i class="fa-brands fa-youtube" style="color: orangered;"></i>
+        <i class="fa-brands fa-square-instagram" style="color: #e1306c;"></i>
+        <i class="fa-brands fa-linkedin" style="color: rgb(66, 66, 252);"></i>
+      </div>
+    </div>
+
+    <div class="copyright">
+      &copy; 2020 Purplle. All rights reserved.
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

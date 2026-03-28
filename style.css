@@ -1,0 +1,567 @@
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0px 120px 0px 120px;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* CORNER SECTION */
+.corner-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.7rem;
+  color: #424242;
+  margin-bottom: -4%;
+  font-weight: lighter;
+}
+
+.corner-section span {
+  height: 12px;
+  border: 0.2px solid rgb(170, 169, 169);
+  font-weight: lighter;
+}
+
+/** NAVBAR **/
+.navbar {
+  color: #6c7a82;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -1.2%;
+  margin-top: -1.3%;
+}
+
+/**NAV-SEARCH **/
+.nav-search {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 2px solid #9c00ad;
+  padding-bottom: 8px;
+}
+
+.search-input {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #424242;
+  margin-right: 30px;
+}
+
+/** NAV-LOG0 **/
+.logo {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  width: 160px;
+  margin-right: 70px;
+}
+
+.logo2 {
+  height: 35px;
+  width: 65px;
+  margin-top: 15%;
+  margin-left: -8%;
+  z-index: 1;
+  position: relative;
+}
+
+.logo1 {
+  z-index: 0;
+  position: relative;
+}
+
+/** NAV-ICONS **/
+.nav-icons {
+  font-size: 28px;
+  display: flex;
+  gap: 40px;
+  font-weight: 100;
+  color: #424242;
+}
+
+
+/** PANEL LINE **/
+.panel-options {
+  font-size: 14px;
+  font-weight: 550;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  color: rgb(44, 65, 76);
+}
+
+.line {
+  border: none;
+  height: 1px;
+  background-color: rgb(222, 225, 227);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  z-index: 2;
+  position: relative;
+
+}
+
+.panel p:hover {
+  color: #9c00ad;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 3px;
+}
+
+
+/* FIRST SLIDESHOW PANEL */
+.first-slideshow {
+  position: relative;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95%;
+  opacity: 0;
+  transition: opacity 2s all;
+}
+
+.first-slideshow img.active {
+  opacity: 1;
+}
+
+.first-slideshow button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+  color: darkgray;
+  cursor: pointer;
+}
+
+.first-slideshow .prev {
+  left: 8px;
+  font-size: 4rem;
+}
+
+.first-slideshow .next {
+  right: 8px;
+  font-size: 4rem;
+}
+
+
+/* HANDPICKED FOR YOU */
+.featured {
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 30px;
+  color: #424242;
+  pointer-events: none;
+}
+
+.view-all {
+  font-size: 0.9rem;
+  color: #9c00ad;
+  text-align: center;
+  margin-top: -10px;
+  font-weight: 520;
+}
+
+.view-all:hover {
+  color: rgb(247, 32, 147)
+}
+
+
+/* PHOTO 1 */
+.photo {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* SECTION */
+.section {
+  max-width: 1300px;
+  margin-top: 5%;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* SLIDER */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  gap: 25px;
+  transition: transform 0.5s ease;
+}
+
+/* PRODUCT CARD */
+.card {
+  min-width: 230px;
+  height: 360px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.card h4 {
+  font-size: 14px;
+  font-weight: lighter;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 1rem;
+}
+
+.discount {
+  color: green;
+  font-size: 1rem;
+}
+
+.price-details {
+  display: flex;
+  gap: 10px;
+  height: auto;
+  margin-top: -5%;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: 1px solid #9c00ad;
+  background: white;
+  color: #9c00ad;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* ARROWS */
+.arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  padding: 10px;
+  z-index: 10;
+  cursor: pointer;
+  color: darkgray;
+}
+
+.left {
+  left: -10px;
+}
+
+.right {
+  right: -5px;
+}
+
+
+/* BLOCK PHOTOS */
+.block-photos {
+  margin-top: 5rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7px;
+}
+
+.container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+/* LAST BOX SECTION */
+.last-box-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8%;
+  background-color: #f5f4f4;
+  padding: 40px;
+}
+
+.last-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+  margin-bottom: -1%;
+}
+
+.last-box h5 {
+  min-width: 80px;
+  font-size: 0.9rem;
+  color: #424242;
+  font-weight: 600;
+}
+
+.last-box p {
+  color: #424242;
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+
+/* footer */
+.footer-section h4 {
+  font-size: 1rem;
+  color: #424242;
+}
+
+.footer-section p {
+  color: #424242;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgb(222, 225, 227);
+}
+
+
+/* Payments and Connect sections */
+.Payments-section,
+.Connect-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: #424242;
+  font-size: 1rem;
+}
+
+.copyright-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.copyright {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #424242;
+  ;
+  padding-bottom: 50px;
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  html {
+    padding: 0 2px;
+  }
+
+  /* CORNER SECTION */
+  .corner-section {
+    display: none;
+  }
+
+  .line {
+    display: none;
+  }
+
+  /* ICONS RIGHT */
+  .nav-icons {
+    order: 2;
+    gap: 15px;
+    font-size: 20px;
+  }
+
+  /* ADD SEARCH ICON BEFORE OTHERS */
+  .nav-icons::before {
+    content: "\f002";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #424242;
+    cursor: pointer;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: row;
+    gap: 1px;
+    margin-top: -20px;
+  }
+
+  .logo {
+    max-width: 100px;
+    margin-left: 7%;
+  }
+
+  .logo2 {
+    top: 15%;
+    left: -5%;
+  }
+
+
+  /* SEARCH */
+  .search-input {
+    display: none;
+  }
+
+  .nav-search {
+    display: none;
+  }
+
+  .search-icon {
+    color: #2d2e2f;
+    margin-left: 90px;
+  }
+
+  /* PANEL OPTIONS */
+  .panel-options {
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.4rem;
+  }
+
+  /* SLIDESHOW */
+  .first-slideshow {
+    height: 140px;
+    width: auto;
+  }
+
+  .first-slideshow button {
+    font-size: 0.6rem;
+    color: rgb(222, 225, 227);
+  }
+
+  /* GRID IMAGES */
+  .container {
+    grid-template-columns: 1fr;
+    /* 🔥 1 column on mobile */
+  }
+
+  /* SLIDER PRODUCTS */
+  .slider {
+    gap: 13px;
+  }
+
+  .card {
+    min-width: 48%;
+    max-width: 48%;
+  }
+
+  .card img {
+    height: 150px;
+  }
+
+  .card h4 {
+    font-size: 12px;
+  }
+
+  .price {
+    font-size: 0.8rem;
+  }
+
+  .old-price {
+    font-size: 0.8rem;
+  }
+
+  .discount {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+
+  .arrow {
+    font-size: 18px;
+    margin-top: -60px;
+  }
+
+  /* BLOCK PHOTOS */
+  .block-photos {
+    margin-top: -2rem;
+    gap: 10px;
+  }
+
+  /* LAST BOX SECTION */
+  .last-box {
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .last-box h5 {
+    font-size: 1rem;
+  }
+
+  .last-box p {
+    margin-top: 0;
+    font-size: 0.8rem;
+  }
+
+  /* FOOTER */
+  .footer {
+    gap: 10px;
+    text-align: center;
+  }
+
+  .Payments-section,
+  .Connect-section {
+    flex-direction: row;
+    gap: 2px;
+  }
+
+  .copyright-section {
+    flex-direction: row;
+    gap: 4px;
+    margin-top: -8px;
+    align-items: center;
+  }
+}
